@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".client.view.main.tweet.TweetFragment"
+    android:orientation="vertical"
+    android:layout_marginTop="70dp"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="@string/status_header"
+        android:textStyle="bold">
+    </TextView>
+    
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:maxLength="180"
+        android:id="@+id/newStatus"
+        android:hint="@string/status_text"
+        android:gravity="top|left"
+        android:inputType="textMultiLine">
+    </EditText>
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:text="@string/send_tweet"
+        android:id="@+id/post_tweet">
+    </Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:text="@string/cancel_tweet"
+        android:id="@+id/no_tweet">
+    </Button>
+
+</LinearLayout>
